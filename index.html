@@ -401,4 +401,11 @@ document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
  document.body.appendChild(layer);
 })();
 </script>
+<script>
+// Start at the top whenever the invitation is opened or restored.
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+const scrollInvitationToTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+window.addEventListener('load', scrollInvitationToTop, { once: true });
+window.addEventListener('pageshow', scrollInvitationToTop);
+</script>
 </body></html>
