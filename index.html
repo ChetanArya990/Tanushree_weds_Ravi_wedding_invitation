@@ -1,7 +1,22 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tanushree weds Ravi · Wedding Invitation</title>
-<meta property="og:title" content="Tanushree weds Ravi — 18–20 November 2026"><meta property="og:description" content="With the blessings of Smt. Anita & Sh. Pramod Negi, we invite you to celebrate.">
+<meta name="description" content="With the blessings of Smt. Anita and Shri Pramod Negi, join Tanushree and Ravi for their wedding celebrations, 18–20 November 2026.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tanushree & Ravi">
+<meta property="og:title" content="Tanushree & Ravi | Wedding Invitation">
+<meta property="og:description" content="With the blessings of Smt. Anita & Shri Pramod Negi, you are warmly invited to celebrate with us · 18–20 November 2026.">
+<meta property="og:url" content="https://chetanarya990.github.io/Tanushree_weds_Ravi_wedding_invitation/">
+<meta property="og:image" content="https://chetanarya990.github.io/Tanushree_weds_Ravi_wedding_invitation/wedding-preview.png">
+<meta property="og:image:secure_url" content="https://chetanarya990.github.io/Tanushree_weds_Ravi_wedding_invitation/wedding-preview.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tanushree and Ravi wedding invitation in deep purple and gold with Lord Ganesha">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tanushree & Ravi | Wedding Invitation">
+<meta name="twitter:description" content="You are warmly invited · 18–20 November 2026">
+<meta name="twitter:image" content="https://chetanarya990.github.io/Tanushree_weds_Ravi_wedding_invitation/wedding-preview.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fbf3e4;--card:#fffaf0;--ink:#4a1220;--maroon:#7b1e32;--gold:#b8893a;--soft:#8a6a5a;--line:#e3cfa4}
@@ -144,7 +159,7 @@ section:not(.hero)::before{
  box-shadow:0 10px 28px rgba(91,36,34,.07);
 }
 .ev:before{content:"";position:absolute;inset:7px;border:1px solid rgba(189,145,72,.22);pointer-events:none}
-.ev img{width:min(100%,300px);max-height:230px;object-fit:cover;border-radius:48% 48% 8px 8px;border:1px solid rgba(189,145,72,.45);padding:5px;background:#fffaf1}
+.ev img{width:min(100%,460px);max-height:340px;object-fit:cover;border-radius:48% 48% 8px 8px;border:1px solid rgba(189,145,72,.45);padding:5px;background:#fffaf1}
 .ev h3{font-size:1.7rem;letter-spacing:.015em;margin-top:18px}
 .ev .t{font-size:.92rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
 .ev p{max-width:520px;margin:8px auto 0;font-size:1.12rem;line-height:1.5}
@@ -157,7 +172,7 @@ footer{border-top:1px solid rgba(189,145,72,.45);margin:20px auto 0;max-width:70
 @media(max-width:520px){
  section{padding:48px 18px}
  .ev{padding:18px 14px 22px}
- .ev img{width:min(100%,260px)}
+ .ev img{width:min(100%,360px);max-height:280px}
  .card{padding:24px 18px}
 }
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
@@ -254,6 +269,58 @@ h2,.hero h1,.ev h3,.cd b{color:#e8d4ff!important}
 #starfield i:nth-child(3n){--c:#f4dfaa!important}
 #starfield i:nth-child(5n){--c:#c99af0!important}
 @media(max-width:480px){.cover-ganesh{width:clamp(128px,35vw,172px)!important;max-height:28vh!important}}
+
+
+/* Background-only glitter stars: decorative layer behind all invitation content */
+body{isolation:isolate}
+#starfield{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  overflow:hidden;
+  pointer-events:none;
+  contain:strict;
+}
+#starfield i{
+  position:absolute;
+  left:var(--x);
+  top:var(--y);
+  display:block;
+  width:var(--s);
+  height:var(--s);
+  border-radius:50%;
+  background:var(--c,#f4dfaa);
+  opacity:var(--o,.55);
+  box-shadow:0 0 4px 1px var(--c),0 0 12px 2px rgba(195,145,245,.45);
+  animation:invitationStarTwinkle var(--d,4s) ease-in-out var(--delay,0s) infinite;
+}
+#starfield i.cross{
+  width:3px;
+  height:3px;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+#starfield i.cross::before,
+#starfield i.cross::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  background:var(--c,#f4dfaa);
+  border-radius:100%;
+  box-shadow:0 0 6px 1px var(--c);
+}
+#starfield i.cross::before{width:1px;height:11px}
+#starfield i.cross::after{width:11px;height:1px}
+@keyframes invitationStarTwinkle{
+  0%,100%{opacity:.18;transform:scale(.65)}
+  50%{opacity:var(--o,.7);transform:scale(1.35)}
+}
+@media(prefers-reduced-motion:reduce){
+  #starfield i{animation:none;opacity:.45}
+}
 
 </style></head><body>
 <div id="cover">
